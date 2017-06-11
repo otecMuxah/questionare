@@ -5,4 +5,14 @@
     .personal-info__title:before {
         background-position: -10px -57px;
     }
+    &__textarea {
+        border: 1px solid rgb(229, 229, 229);
+        border-radius: 5px;
+        background-color: rgba(217, 217, 217, 0);
+        color: $color-black;
+        height: 64px;
+        width: 100%;
+        font-size: 24px;
+        padding: 32px;
+    }
 }

@@ -4,9 +4,44 @@
         flex-wrap: wrap;
     }
     &__item {
-
+        flex: 0 0 33%;
+        margin-bottom: 20px;
     }
     .personal-info__title:before {
         background-position: -10px -0px;
+    }
+    &__text {
+        padding-left: 33px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -1px;
+            width: 19px;
+            height: 19px;
+            border: 1px solid $color-blue;
+            border-radius: 3px;
+            display: block;
+        }
+        .my-experience__checkbox:checked ~ &:after {
+            content: '';
+            width: 5px;
+            height: 10px;
+            border-bottom: 1px solid $color-blue;
+            border-right: 1px solid $color-blue;
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 8px;
+            transform: rotate(45deg);
+
+        }
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__label {
+        cursor: pointer;
     }
 }
