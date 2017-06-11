@@ -1,0 +1,12 @@
+.my-experience {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+
+    }
+    .personal-info__title:before {
+        background-position: -10px -0px;
+    }
+}

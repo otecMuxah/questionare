@@ -1,0 +1,22 @@
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 520px;
+    width: 100%;
+    &__title {
+        font: 30px $font_light;
+        position: relative;
+        padding-top: 90px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%,0);
+            background-position: -10px -171px;
+            width: 47px;
+            height: 47px;
+        }
+    }
+}

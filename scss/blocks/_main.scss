@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font: 70px $font_thin;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

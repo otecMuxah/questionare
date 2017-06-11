@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
+    <!--<link rel="stylesheet" href="css/jquery-ui.theme.min.css">-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link active">Личная информация</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Опыт</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">JavaScript</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">О себе</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1 class="main__title">Анкета</h1>
+            <form method="post">
+                <div class="main__form">
+                    <section class="personal-info">
+                        <h2 class="personal-info__title">Личная информация</h2>
+                        <input type="text" class="input input--text" placeholder="ФИО">
+                        <select class="input input--select">
+                            <option disabled selected>Год рождения</option>
+                            <option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option><option>2001</option>
+                            <option>2002</option>
+                        </select>
+                        <input type="text" class="input input--text" placeholder="Место проживания">
+                        <input type="text" class="input input--text" placeholder="Skype">
+                        <input type="text" class="input input--text" placeholder="E-mail">
+                    </section>
+                    <section class="my-javascript">
+                        <div id="slider-range-min"></div>
+                    </section>
+                    <section class="my-experience">
+                        <h2 class="personal-info__title">Расскажите о своем опыте</h2>
+                        <ul class="my-experience__list">
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-1" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-1">
+                                    <span class="my-experience__text">БЭМ/OOCSS</span>
+                                </label>
+                            </li>
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-2" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-2">
+                                    <span class="my-experience__text">Stylus/LESS/SASS</span>
+                                </label>
+                            </li>
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-3" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-3">
+                                    <span class="my-experience__text">Работаю с SVG</span>
+                                </label>
+                            </li>
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-4" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-4">
+                                    <span class="my-experience__text">Верстаю семантично</span>
+                                </label>
+                            </li>
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-5" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-5">
+                                    <span class="my-experience__text">ES2015/ES2016</span>
+                                </label>
+                            </li>
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-6" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-6">
+                                    <span class="my-experience__text">Gulp/GRUNT</span>
+                                </label>
+                            </li>
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-7" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-7">
+                                    <span class="my-experience__text">Webpack</span>
+                                </label>
+                            </li>
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-8" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-8">
+                                    <span class="my-experience__text">jQuery</span>
+                                </label>
+                            </li>
+                            <li class="my-experience__item">
+                                <label for="myExperienceCheck-9" class="my-experience__label">
+                                    <input type="checkbox" class="my-experience__checkbox" id="myExperienceCheck-9">
+                                    <span class="my-experience__text">Ипользую Git</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="about-user">
+                        <h2 class="personal-info__title">Расскажите о себе</h2>
+                        <span class="about-user__text">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</span>
+                        <textarea placeholder="Понравилась тем, что..." cols="30" rows="10"></textarea>
+                    </section>
+                    <button type="submit">Готово</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery-ui-slider-pips.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

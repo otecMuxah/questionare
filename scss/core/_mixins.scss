@@ -1,0 +1,47 @@
+@mixin font-face($font) {
+    @font-face {
+      font-family: '#{$font}';
+
+      src: url('../../fonts/#{$font}.woff2') format('woff2'),
+           url('../../fonts/#{$font}.woff') format('woff');
+
+      font-weight: normal;
+      font-style: normal;
+    }
+}
+@mixin fonts($fonts-list) {
+  @each $font in $fonts-list {
+    @include font-face($font);
+  }
+}
+@mixin font($size, $line-height, $family, $weight: normal) {
+  font: $weight #{$size}px/#{$line-height}px '#{$family}', Arial, Helvetica sans-serif;
+}
+
+@mixin width1300 {
+    @media screen and (max-width: $res_1300) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $res_1100) {
+        @content;
+    }
+}
+@mixin px800 {
+    @media screen and (max-width: 800px) {
+        @content;
+    }
+}
+@mixin phone {
+    @media screen and (max-width: $res_720) {
+        @content;
+    }
+}
+
+@mixin small-phone {
+    @media screen and (max-width: $res_480) {
+        @content;
+    }
+}
