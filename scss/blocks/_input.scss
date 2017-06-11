@@ -3,11 +3,12 @@
     border-radius: 5px;
     background-color: rgba(217, 217, 217, 0);
     color: $color-black;
-    height: 64px;
+    height: 58px;
     width: 100%;
     font-size: 24px;
     padding: 0 32px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    text-align: center;
     &::placeholder {
         color: $color-placeholder;
         font-size: 24px;
@@ -22,14 +23,15 @@
     border-radius: 5px;
     background-color: rgba(217, 217, 217, 0);
     color: $color-placeholder;
-    height: 64px;
+    height: 60px;
     width: 100%;
     font-size: 24px;
     padding: 16px 32px;
     max-width: 320px;
     box-sizing: border-box;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-right: -5px;
     &:focus {
         outline: 0;
     }
@@ -127,21 +129,30 @@
     margin-left: -1em;
     width: 185px;
     text-align: left;
+    @include px860 {
+        font-size: 12px;
+        width: auto;
+    }
 }
 .ui-widget.ui-widget-content {
     border: none;
 }
 .ui-slider-horizontal .ui-slider-range {
     background: $color-gradient;
+    border-radius: 0;
     &:after {
         content: '';
         display: block;
         width: 0;
         height: 0;
         border-right: 770px solid transparent;
-        border-top: 12px solid #fff;
+        border-top: 10px solid #fff;
         z-index: 100;
         position: absolute;
+        @include small-phone {
+            border-right: 300px solid transparent;
+            border-top: 11px solid #fff;
+        }
     }
 }
 .ui-slider-pip-last .ui-slider-label {
@@ -168,19 +179,26 @@ ui-slider-pip-initial,
         width: 23px;
         height: 26px;
         display: block;
-        bottom: -18px;
+        bottom: -22px;
         position: relative;
+        left: -4px;
     }
     &:focus {
         outline: 0;
     }
 }
 #slider-range-min {
-    margin-top: 6em;
+    margin-top: 5.5em;
 }
 #slider-range-min .ui-slider-pip {
     top: -12px;
 }
 #slider-range-min .ui-slider-pip .ui-slider-label {
-    top: -45px;
+    top: -37px;
+    @include px860 {
+        top: -70px;
+    }
+}
+.ui-slider-horizontal.ui-slider-pips {
+    margin-bottom: 2em;
 }

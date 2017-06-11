@@ -29,8 +29,8 @@
         @content;
     }
 }
-@mixin px800 {
-    @media screen and (max-width: 800px) {
+@mixin px860 {
+    @media screen and (max-width: 860px) {
         @content;
     }
 }

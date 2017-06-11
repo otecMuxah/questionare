@@ -1,15 +1,19 @@
 .navigation {
+    @include tablet {
+        display: none;
+    }
     &__list {
         display: flex;
     }
     &__item {
-        margin-right: 50px;
+        margin-right: 75px;
         &:last-child {
             margin-right: 0;
         }
     }
     &__link {
         color: $color-blue;
+        font-size: 14px;
     }
     .active {
         color: $color-black;

@@ -2,21 +2,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 520px;
+    max-width: 454px;
     width: 100%;
+    margin-bottom: 38px;
     &__title {
         font: 30px $font_light;
         position: relative;
-        padding-top: 90px;
+        padding-top: 77px;
+        margin-bottom: 47px;
         &:before {
             content: '';
             position: absolute;
             top: 10px;
             left: 50%;
-            transform: translate(-50%,0);
+            transform: translate(-59%, 0);
             background-position: -10px -171px;
             width: 47px;
             height: 47px;
+        }
+        .my-experience & {
+            padding-top: 80px;
+            margin-bottom: 50px;
+        }
+        .my-javascript & {
+            padding-top: 80px;
+            margin-bottom: 7px;
+        }
+        .about-user & {
+            padding-top: 80px;
+            margin-bottom: 12px;
         }
     }
 }

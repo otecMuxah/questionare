@@ -1,0 +1,14 @@
+.button {
+    border-radius: 10px;
+    background-color: rgb(67, 89, 147);
+    width: 116px;
+    height: 51px;
+    color: $color-white;
+    font-size: 16px;
+    font-family: roboto-light;
+    text-align: center;
+    border: 0;
+    &:focus {
+        outline: 0;
+    }
+}

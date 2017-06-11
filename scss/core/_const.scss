@@ -2,19 +2,19 @@
 //
 @font-face {
     font-family: roboto-regular;
-    src: url('../../../static/fonts/Roboto-Regular.woff') format('woff'),
-         url('../../../static/fonts/Roboto-Regular.woff2') format('woff2');
+    src: url('../fonts/Roboto-Regular.woff') format('woff'),
+         url('../fonts/Roboto-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: roboto-light;
-    src: url('../../../static/fonts/Roboto-Light.woff') format('woff'),
-         url('../../../static/fonts/Roboto-Light.woff2') format('woff2');
+    src: url('../fonts/Roboto-Light.woff') format('woff'),
+         url('../fonts/Roboto-Light.woff2') format('woff2');
 }
 @font-face {
     font-family: roboto-thin;
-    src: url('../../../static/fonts/Roboto-Thin.woff') format('woff'),
-         url('../../../static/fonts/Roboto-Thin.woff2') format('woff2');
+    src: url('../fonts/Roboto-Thin.woff') format('woff'),
+         url('../fonts/Roboto-Thin.woff2') format('woff2');
 }
 $roboto-light: roboto-light;
 $roboto-regular: roboto-regular;
