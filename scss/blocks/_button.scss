@@ -8,6 +8,10 @@
     font-family: roboto-light;
     text-align: center;
     border: 0;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(67, 89, 47);
+    }
     &:focus {
         outline: 0;
     }
