@@ -10,6 +10,7 @@
         position: relative;
         padding-top: 77px;
         margin-bottom: 47px;
+        text-align: center;
         &:before {
             content: '';
             position: absolute;
@@ -27,6 +28,9 @@
         .my-javascript & {
             padding-top: 80px;
             margin-bottom: 7px;
+            &:before {
+                background-position: -10px -114px;
+            }
         }
         .about-user & {
             padding-top: 80px;

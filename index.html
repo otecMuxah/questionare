@@ -14,7 +14,8 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <nav class="header__nav navigation">
+            <span class="hamburger" id="hamburgerIcon">&#9776;</span>
+            <nav class="header__nav navigation" id="mainNav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#" class="navigation__link active">Личная информация</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link">Опыт</a></li>
@@ -121,6 +122,15 @@
             </form>
         </main>
     </div>
+    <script>
+        document.getElementById('hamburgerIcon').addEventListener('click', function () {
+            if (document.getElementById('mainNav').classList.contains('active')) {
+                document.getElementById('mainNav').classList.remove('active');
+            } else {
+                document.getElementById('mainNav').classList.add('active');
+            }
+        })
+    </script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/jquery-ui-slider-pips.js"></script>
