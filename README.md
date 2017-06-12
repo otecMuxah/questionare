@@ -1,4 +1,4 @@
 # questionare
-nmp install
+npm install
 gulp sass
 index.html
